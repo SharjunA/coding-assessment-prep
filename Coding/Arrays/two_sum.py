@@ -25,6 +25,19 @@ def two_sum(arr, target):
     return None
 
 
+def has_pair_with_sum_indices(nums, target):
+    visited = {}
+    
+    for i, x in enumerate(nums):
+        needed = target - x
+        if needed in visited:
+            return True, (visited[needed], i)
+        # store index if value not already stored (keeps earliest index)
+        if x not in visited:
+            visited[x] = i
+    return False, None
+
+
 input_array = [2, 7, 11, 15]
 target_value = 9
 result = two_sum(input_array, target_value)
