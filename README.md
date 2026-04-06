@@ -55,4 +55,3 @@ This repository is intended for:
 ## Author
 
 **Sharjun A**  
-Software Engineer @ Cognizant
