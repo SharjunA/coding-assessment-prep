@@ -1,3 +1,30 @@
+'''
+Problem Statement: Happy and Sad People Simulation
+
+In a town, there are N people, all of whom are initially happy. Over time, people's emotions change according to the following rules:
+
+In each round, 70% of the happy people become sad.
+At the same time, 50% of the sad people become happy.
+
+The changes happen simultaneously in each round.
+
+Your task is to simulate this process for 4 rounds and determine the number of happy and sad people remaining at the end.
+
+Input Format:
+A single integer N representing the total number of people.
+
+Output Format:
+Print two integers separated by a space:
+The number of happy people
+The number of sad people
+
+Notes
+The number of people transitioning between states should be rounded to the nearest integer when calculating 70% of happy people.
+For the sad people becoming happy, exactly half of the sad people transition (integer division may be used).
+The total number of people remains constant throughout the simulation.
+'''
+
+
 number_of_people = int(input())
 
 happy_people = number_of_people
